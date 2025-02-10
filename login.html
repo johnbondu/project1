@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Module</title>
+    <style>
+        .mydiv {
+            text-decoration: bold;
+            text-align: left;
+            margin-top: 1cm;
+            width: max-content;
+            height: max-content;
+            border: 6px solid cyan;
+            text-align: center;
+            color: white;
+            background-color: green;
+            font-family: verdana;
+            font-size:25pt;
+            padding-left: 3cm;
+            border-radius: 1cm;
+            padding-right: 3cm;
+            padding-bottom: 1cm;
+       }
+body
+{
+    background-color:white;
+}
+input
+{
+    height: 25pt;
+    font-size: 20pt;
+}
+h1{
+    margin-top: 3cm;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Creating a Login Module</h1>
+        <div class="mydiv">
+            <script src="login.js"></script>
+            <form id="login-form">
+                <br><br>
+                <label for="username">UserName:</label>
+                <input type="text" id="username" name="username">
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Login" onclick="validate()">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Clear">
+                <br><br>
+                <div id="result"></div>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
